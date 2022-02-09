@@ -1,0 +1,7 @@
+.media(@screen, @rules) {
+  & when (@screen = mobile) {
+    @media (max-width: @mobile-area) {
+      @rules();
+    }
+  }
+}
